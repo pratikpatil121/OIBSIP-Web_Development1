@@ -1,0 +1,188 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Oneplus</title>
+</head>
+
+<body>
+  <div class="overlay">
+    <img src="one.png" width="200" height="200">
+    <h1>Oneplus</h1>
+    <span>Never Settle</span>
+  </div>
+
+  <div class="wrapper">
+
+    <div class="nav">
+      <div class="logo">
+        <h1>
+          <span>One <br> Plus</span>
+          <br>
+          Never Settle
+        </h1>
+      </div>
+
+      <div class="menu-links">
+        <ul>
+          <li>home.</li>
+          <li> one plus.</li>
+          <li>contact.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <span class="text">
+      <img src="one.png" width="100" height="100">
+      <span class="title">nord</span>
+      <p>Pretty much everything you could ask for.<br> Best Camera's.</p>
+    </span>
+
+    <div class="watchnow">
+      <i class="fa fa-play"></i>
+      <a href="https://www.youtube.com/watch?v=JqVwL8z68TY" style="text-decoration:none ;color: #ffffff;">
+
+        Watch now!</a>
+    </div>
+
+    <div class="media">
+      <ul>
+        <li><i class="fa fa-facebook"></i></li>
+        <li><i class="fa fa-twitter"></i></li>
+        <li><i class="fa fa-instagram"></i></li>
+      </ul>
+    </div>
+
+    <div class="ellipse-container">
+      <div class="ellipse thin"></div>
+      <div class="ellipse thick"></div>
+      <div class="ellipse yellow"></div>
+
+    </div>
+
+    <div class="foot">
+      <p> Created by Abhishek Jani @ 2022-23</p>
+    </div>
+
+  </div>
+
+  <script>
+
+    TweenMax.to(".overlay h1", 2, {
+      opacity: 0,
+      y: -60,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay img", 2, {
+      opacity: 0,
+      y: -60,
+      delay: .6,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay span", 2, {
+      delay: .3,
+      opacity: 0,
+      y: -60,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay", 2, {
+      delay: 1,
+      top: "-100%",
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".ellipse-container", 1, {
+      delay: 2,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".yellow", 1, {
+      delay: 3.5,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".circle1", 1, {
+      delay: 2.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".circle2", 1, {
+      delay: 2.6,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".logo", 1, {
+      delay: 3,
+      opacity: 0,
+      y: -100,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".menu-links ul li", 1, {
+      delay: 3.2,
+      opacity: 0,
+      x: -100,
+      ease: Expo.easeInOut
+    }, 0.08)
+
+    TweenMax.from(".scrolldown", 1, {
+      delay: 3.4,
+      opacity: 0,
+      y: 100,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".text .title", 1, {
+      delay: 3,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".text p", 1, {
+      delay: 3.2,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".foot", 1, {
+      delay: 3.2,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+
+    TweenMax.from(".watchnow", 1, {
+      delay: 3.4,
+      opacity: 0,
+      x: 200,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".media ul li", 1, {
+      delay: 3,
+      opacity: 0,
+      y: 100,
+      ease: Expo.easeInOut
+    }, 0.08)
+
+  </script>
+</body>
+
+</html>
